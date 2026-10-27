@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;700&display=swap');
+
+/* CSS principal do projeto */
+:root {
+    --bg-principal: #0d0d0d;
+    --bg-card: #1a1a1a;
+    --bg-menu: #111111;
+    --texto: #f3f4f6;
+    --titulo: #ffffff;
+    --subtitulo: #d1d5db;
+    --borda: #9ca3af;
+    --destaque: #e5e7eb;
+    --sombra: rgba(0, 0, 0, 0.35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #070707, var(--bg-principal));
+    color: var(--texto);
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1 {
+    color: var(--titulo);
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 20px 0 10px;
+}
+
+h2 {
+    color: var(--subtitulo);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: var(--destaque);
+    font-size: 1.5rem;
+    margin-top: 24px;
+}
+
+p {
+    font-size: 1.04rem;
+    text-align: justify;
+    margin: 12px 0;
+}
+
+.container,
+.topo,
+.rodape {
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--bg-menu);
+    border: 2px solid var(--borda);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px var(--sombra);
+}
+
+.menu a,
+.rodape a {
+    color: var(--titulo);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 2px solid var(--borda);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 16px var(--sombra);
+}
+
+#historia {
+    border-left: 5px solid var(--borda);
+}
+
+.imagem-box {
+    background-color: #111111;
+    border: 2px dashed var(--borda);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid #f3f4f6;
+    padding: 4px;
+}
+
+.destaque {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+ol,
+ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.rodape {
+    text-align: center;
+    border-top: 2px solid var(--borda);
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+/* Comentário: esta parte deixa os links com destaque visual */
+a:hover {
+    color: #d1d5db;
+}
